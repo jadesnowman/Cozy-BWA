@@ -1,3 +1,4 @@
+import 'package:cozy_marketplace/pages/contact_page.dart';
 import 'package:cozy_marketplace/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -227,7 +228,14 @@ class DetailPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(17),
                           ),
                         ),
-                        onPressed: null,
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const ContactPage(),
+                            ),
+                          );
+                        },
                         child: Text(
                           'Book Now',
                           style: buttonTextStyle.copyWith(
