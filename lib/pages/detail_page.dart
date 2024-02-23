@@ -31,29 +31,32 @@ class DetailPage extends StatelessWidget {
                         height: 40,
                         width: double.infinity,
                         color: Colors.transparent,
-                        margin: EdgeInsets.symmetric(
+                        margin: const EdgeInsets.symmetric(
                           horizontal: 24,
                           vertical: 30,
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                shape: CircleBorder(),
-                                padding: EdgeInsets.all(20),
-                              ),
-                              onPressed: () => Navigator.pop(context),
-                              child: Image.asset(
-                                'assets/images/navigations/Icon_left_outline.png',
-                                width: 20,
-                                height: 20,
+                            Container(
+                              width: 44,
+                              height: 44,
+                              child: TextButton(
+                                style: ElevatedButton.styleFrom(
+                                    shape: const CircleBorder(),
+                                    backgroundColor: Colors.white),
+                                onPressed: () => Navigator.pop(context),
+                                child: Image.asset(
+                                  'assets/images/navigations/Icon_left_outline.png',
+                                  width: 20,
+                                  height: 20,
+                                ),
                               ),
                             ),
                             Container(
                               height: 40,
                               width: 40,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.all(
                                   Radius.circular(100),
@@ -75,9 +78,9 @@ class DetailPage extends StatelessWidget {
                   Container(
                     height: 30,
                     width: double.infinity,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
-                      borderRadius: const BorderRadius.only(
+                      borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(40),
                         topRight: Radius.circular(40),
                       ),
@@ -86,7 +89,7 @@ class DetailPage extends StatelessWidget {
                 ],
               ),
               Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 24),
@@ -118,7 +121,7 @@ class DetailPage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 12),
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         FacilityCard(
@@ -126,13 +129,13 @@ class DetailPage extends StatelessWidget {
                           name: 'kitchen',
                           amount: 2,
                         ),
-                        const SizedBox(width: 35),
+                        SizedBox(width: 35),
                         FacilityCard(
                           imageUrl: 'assets/images/detail/002-double-bed.png',
                           name: 'bedroom',
                           amount: 3,
                         ),
-                        const SizedBox(width: 35),
+                        SizedBox(width: 35),
                         FacilityCard(
                           imageUrl: 'assets/images/detail/003-cupboard.png',
                           name: 'closet',
@@ -158,19 +161,19 @@ class DetailPage extends StatelessWidget {
                             height: 88,
                             width: 110,
                           ),
-                          SizedBox(width: 18),
+                          const SizedBox(width: 18),
                           Image.asset(
                             'assets/images/detail/pic-2.png',
                             height: 88,
                             width: 110,
                           ),
-                          SizedBox(width: 18),
+                          const SizedBox(width: 18),
                           Image.asset(
                             'assets/images/detail/pic-3.png',
                             height: 88,
                             width: 110,
                           ),
-                          SizedBox(width: 18),
+                          const SizedBox(width: 18),
                           Image.asset(
                             'assets/images/detail/pic-4.png',
                             height: 88,
@@ -214,7 +217,7 @@ class DetailPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 40),
                     SizedBox(
-                      width: 327,
+                      width: double.infinity,
                       height: 50,
                       child: TextButton(
                         style: TextButton.styleFrom(
