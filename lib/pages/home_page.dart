@@ -33,27 +33,6 @@ class HomePage extends StatelessWidget {
                 ),
                 const SizedBox(height: 30),
                 Text(
-                  'Tips & Guidance',
-                  style: heading3.copyWith(
-                    fontSize: 16,
-                  ),
-                ),
-                const SizedBox(height: 16),
-                TipsAndGuide(
-                  tips: Tips(
-                      imageUrl: 'assets/images/tips/icon.png',
-                      title: 'City Guidelines',
-                      date: 'Updated 20 Apr'),
-                ),
-                const SizedBox(height: 30),
-                TipsAndGuide(
-                  tips: Tips(
-                      imageUrl: 'assets/images/tips/icon-1.png',
-                      title: 'Jakarta Fairship',
-                      date: 'Updated 1 Apr'),
-                ),
-                const SizedBox(height: 30),
-                Text(
                   'Popular Cities',
                   style: heading3.copyWith(
                     fontSize: 16,
@@ -162,6 +141,26 @@ class HomePage extends StatelessWidget {
                       address: '101 Oak Avenue'),
                 ),
                 const SizedBox(height: 30),
+                Text(
+                  'Tips & Guidance',
+                  style: heading3.copyWith(
+                    fontSize: 16,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                TipsAndGuide(
+                  tips: Tips(
+                      imageUrl: 'assets/images/tips/icon.png',
+                      title: 'City Guidelines',
+                      date: 'Updated 20 Apr'),
+                ),
+                const SizedBox(height: 30),
+                TipsAndGuide(
+                  tips: Tips(
+                      imageUrl: 'assets/images/tips/icon-1.png',
+                      title: 'Jakarta Fairship',
+                      date: 'Updated 1 Apr'),
+                ),
               ],
             ),
           ),
