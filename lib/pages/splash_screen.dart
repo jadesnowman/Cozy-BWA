@@ -1,3 +1,4 @@
+import 'package:cozy_marketplace/pages/home_page.dart';
 import 'package:cozy_marketplace/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -62,7 +63,12 @@ class SplashScreen extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print('Explore Now');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const HomePage(),
+                        ),
+                      );
                     },
                     child: Text(
                       'Explore Now',
