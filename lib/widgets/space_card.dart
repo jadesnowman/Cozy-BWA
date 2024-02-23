@@ -9,54 +9,60 @@ class SpaceCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(18),
-      child: Container(
-        color: grayColor,
-        width: 120,
-        child: Column(
-          children: [
-            Stack(children: [
-              Image.asset(
-                city.imageUrl,
-                width: 120,
-                height: 102,
-                fit: BoxFit.cover,
-              ),
-              city.isPopular
-                  ? Align(
-                      alignment: Alignment.topRight,
-                      child: Container(
-                        width: 50,
-                        height: 30,
-                        decoration: BoxDecoration(
-                          color: purpleColor,
-                          borderRadius: const BorderRadius.only(
-                            bottomLeft: Radius.circular(36),
-                          ),
-                        ),
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: Image.asset(
-                            'assets/images/Icon_star_solid.png',
-                            width: 22,
-                            height: 22,
-                          ),
-                        ),
+    return Row(
+      children: [
+        Container(
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(18),
+            child: Stack(
+              alignment: Alignment.topRight,
+              children: [
+                Image.asset(
+                  city.imageUrl,
+                  width: 130,
+                  height: 110,
+                  fit: BoxFit.cover,
+                ),
+                Container(
+                  width: 70,
+                  height: 30,
+                  decoration: BoxDecoration(
+                    color: purpleColor,
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(36),
+                    ),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        'assets/images/Icon_star_solid.png',
+                        width: 18,
+                        height: 18,
                       ),
-                    )
-                  : const SizedBox()
-            ]),
-            const SizedBox(
-              height: 11,
+                      Text(
+                        '1/3',
+                        style: heading1Light.copyWith(fontSize: 13),
+                      )
+                    ],
+                  ),
+                ),
+              ],
             ),
-            Text(city.name,
-                style: heading4.copyWith(
-                  fontSize: 16,
-                ))
-          ],
+          ),
         ),
-      ),
+        SizedBox(
+          width: 20,
+        ),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(city.name),
+            Text(city.imageUrl),
+            Text(city.isPopular.toString())
+          ],
+        )
+      ],
     );
   }
 }

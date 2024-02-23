@@ -15,6 +15,11 @@ TextStyle heading1 = GoogleFonts.poppins(
   color: const Color(0xff000000),
 );
 
+TextStyle heading1Light = GoogleFonts.poppins(
+  fontWeight: FontWeight.w500,
+  color: secondaryColor,
+);
+
 TextStyle heading2 = GoogleFonts.poppins(
   fontWeight: FontWeight.w300,
   color: const Color(0xff82868E),
