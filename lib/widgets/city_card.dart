@@ -1,4 +1,4 @@
-import 'package:cozy_marketplace/models/city.dart';
+import 'package:cozy_marketplace/models/index.dart';
 import 'package:cozy_marketplace/theme.dart';
 import 'package:flutter/material.dart';
 

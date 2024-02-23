@@ -2,7 +2,7 @@ import 'package:cozy_marketplace/theme.dart';
 import 'package:cozy_marketplace/widgets/city_card.dart';
 import 'package:cozy_marketplace/widgets/space_card.dart';
 import 'package:flutter/material.dart';
-import 'package:cozy_marketplace/models/city.dart';
+import 'package:cozy_marketplace/models/index.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -86,43 +86,58 @@ class HomePage extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 SpaceCard(
-                  city: City(
-                    name: 'Aceh',
-                    imageUrl: 'assets/images/recommended/pic-1.png',
-                    isPopular: true,
-                  ),
+                  space: Space(
+                      imageUrl: 'assets/images/recommended/pic-1.png',
+                      name: 'Cozy Apartment',
+                      isPopular: true,
+                      rating: 4,
+                      price: 100,
+                      duration: 3,
+                      address: '123 Main Street'),
                 ),
                 const SizedBox(height: 30),
                 SpaceCard(
-                  city: City(
-                    name: 'Aceh',
-                    imageUrl: 'assets/images/recommended/pic-2.png',
-                    isPopular: true,
-                  ),
+                  space: Space(
+                      imageUrl: 'assets/images/recommended/pic-2.png',
+                      name: 'Cozy Apartment',
+                      isPopular: true,
+                      rating: 4,
+                      price: 100,
+                      duration: 3,
+                      address: '123 Main Street'),
                 ),
                 const SizedBox(height: 30),
                 SpaceCard(
-                  city: City(
-                    name: 'Aceh',
-                    imageUrl: 'assets/images/recommended/pic-3.png',
-                    isPopular: true,
-                  ),
+                  space: Space(
+                      imageUrl: 'assets/images/recommended/pic-3.png',
+                      name: 'Luxury Villa',
+                      isPopular: false,
+                      rating: 5,
+                      price: 500,
+                      duration: 7,
+                      address: '456 Park Avenue'),
                 ),
                 const SizedBox(height: 30),
                 SpaceCard(
-                  city: City(
-                    name: 'Aceh',
-                    imageUrl: 'assets/images/recommended/pic-4.png',
-                    isPopular: true,
-                  ),
+                  space: Space(
+                      imageUrl: 'assets/images/recommended/pic-4.png',
+                      name: 'Modern Loft',
+                      isPopular: true,
+                      rating: 4,
+                      price: 200,
+                      duration: 5,
+                      address: '789 Elm Street'),
                 ),
                 const SizedBox(height: 30),
                 SpaceCard(
-                  city: City(
-                    name: 'Aceh',
-                    imageUrl: 'assets/images/recommended/pic.png',
-                    isPopular: true,
-                  ),
+                  space: Space(
+                      imageUrl: 'assets/images/recommended/pic.png',
+                      name: 'Rustic Cabin',
+                      isPopular: true,
+                      rating: 3,
+                      price: 150,
+                      duration: 4,
+                      address: '101 Oak Avenue'),
                 ),
               ],
             ),

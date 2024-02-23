@@ -1,11 +1,11 @@
-import 'package:cozy_marketplace/models/city.dart';
+import 'package:cozy_marketplace/models/index.dart';
 import 'package:cozy_marketplace/theme.dart';
 import 'package:flutter/material.dart';
 
 class SpaceCard extends StatelessWidget {
-  final City city;
+  final Space space;
 
-  const SpaceCard({super.key, required this.city});
+  const SpaceCard({super.key, required this.space});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class SpaceCard extends StatelessWidget {
               alignment: Alignment.topRight,
               children: [
                 Image.asset(
-                  city.imageUrl,
+                  space.imageUrl,
                   width: 130,
                   height: 110,
                   fit: BoxFit.cover,
@@ -57,9 +57,9 @@ class SpaceCard extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(city.name),
-            Text(city.imageUrl),
-            Text(city.isPopular.toString())
+            Text(space.name),
+            Text(space.imageUrl),
+            Text(space.isPopular.toString())
           ],
         )
       ],
