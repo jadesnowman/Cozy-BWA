@@ -148,7 +148,37 @@ class DetailPage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 12),
-                    Image.asset('assets/images/detail/pic-1.png'),
+                    SizedBox(
+                      height: 88,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+                          Image.asset(
+                            'assets/images/detail/pic-1.png',
+                            height: 88,
+                            width: 110,
+                          ),
+                          SizedBox(width: 18),
+                          Image.asset(
+                            'assets/images/detail/pic-2.png',
+                            height: 88,
+                            width: 110,
+                          ),
+                          SizedBox(width: 18),
+                          Image.asset(
+                            'assets/images/detail/pic-3.png',
+                            height: 88,
+                            width: 110,
+                          ),
+                          SizedBox(width: 18),
+                          Image.asset(
+                            'assets/images/detail/pic-4.png',
+                            height: 88,
+                            width: 110,
+                          ),
+                        ],
+                      ),
+                    ),
                     const SizedBox(height: 30),
                     Text(
                       'Location',
