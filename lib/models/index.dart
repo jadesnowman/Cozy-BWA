@@ -24,3 +24,11 @@ class Space {
       required this.duration,
       required this.address});
 }
+
+class Tips {
+  final String title;
+  final String imageUrl;
+  final String date;
+
+  Tips({required this.title, required this.imageUrl, required this.date});
+}

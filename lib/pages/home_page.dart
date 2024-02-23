@@ -1,6 +1,7 @@
 import 'package:cozy_marketplace/theme.dart';
 import 'package:cozy_marketplace/widgets/city_card.dart';
 import 'package:cozy_marketplace/widgets/space_card.dart';
+import 'package:cozy_marketplace/widgets/tips_and_guide.dart';
 import 'package:flutter/material.dart';
 import 'package:cozy_marketplace/models/index.dart';
 
@@ -29,6 +30,27 @@ class HomePage extends StatelessWidget {
                   style: heading2.copyWith(
                     fontSize: 16,
                   ),
+                ),
+                const SizedBox(height: 30),
+                Text(
+                  'Tips & Guidance',
+                  style: heading3.copyWith(
+                    fontSize: 16,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                TipsAndGuide(
+                  tips: Tips(
+                      imageUrl: 'assets/images/tips/icon.png',
+                      title: 'Rustic Cabin',
+                      date: '101 Oak Avenue'),
+                ),
+                const SizedBox(height: 30),
+                TipsAndGuide(
+                  tips: Tips(
+                      imageUrl: 'assets/images/tips/icon-1.png',
+                      title: 'Rustic Cabin',
+                      date: '101 Oak Avenue'),
                 ),
                 const SizedBox(height: 30),
                 Text(
@@ -139,6 +161,7 @@ class HomePage extends StatelessWidget {
                       duration: 4,
                       address: '101 Oak Avenue'),
                 ),
+                const SizedBox(height: 30),
               ],
             ),
           ),
