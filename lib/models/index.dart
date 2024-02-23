@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class City {
   final String name;
   final String imageUrl;
@@ -31,4 +33,12 @@ class Tips {
   final String date;
 
   Tips({required this.title, required this.imageUrl, required this.date});
+}
+
+class Menu {
+  final String icon;
+  final String iconActive;
+  final bool active;
+
+  Menu({required this.active, required this.icon, required this.iconActive});
 }

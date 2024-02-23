@@ -1,5 +1,6 @@
 import 'package:cozy_marketplace/theme.dart';
 import 'package:cozy_marketplace/widgets/city_card.dart';
+import 'package:cozy_marketplace/widgets/buttom_navbar.dart';
 import 'package:cozy_marketplace/widgets/space_card.dart';
 import 'package:cozy_marketplace/widgets/tips_and_guide.dart';
 import 'package:flutter/material.dart';
@@ -161,11 +162,14 @@ class HomePage extends StatelessWidget {
                       title: 'Jakarta Fairship',
                       date: 'Updated 1 Apr'),
                 ),
+                const SizedBox(height: 100),
               ],
             ),
           ),
         ),
       ),
+      floatingActionButton: const ButtomNavbar(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }

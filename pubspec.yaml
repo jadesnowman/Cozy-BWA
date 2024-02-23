@@ -65,6 +65,7 @@ flutter:
     - assets/images/popular/
     - assets/images/recommended/
     - assets/images/tips/
+    - assets/images/navigations/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
