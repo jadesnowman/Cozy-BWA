@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-// homepage
-
 Color purpleColor = const Color(0xff5843BE);
 Color secondaryColor = const Color(0xffFFFFFF);
 Color grayColor = const Color(0xffF6F7F8);

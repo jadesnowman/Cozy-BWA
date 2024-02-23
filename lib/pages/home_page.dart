@@ -42,15 +42,15 @@ class HomePage extends StatelessWidget {
                 TipsAndGuide(
                   tips: Tips(
                       imageUrl: 'assets/images/tips/icon.png',
-                      title: 'Rustic Cabin',
-                      date: '101 Oak Avenue'),
+                      title: 'City Guidelines',
+                      date: 'Updated 20 Apr'),
                 ),
                 const SizedBox(height: 30),
                 TipsAndGuide(
                   tips: Tips(
                       imageUrl: 'assets/images/tips/icon-1.png',
-                      title: 'Rustic Cabin',
-                      date: '101 Oak Avenue'),
+                      title: 'Jakarta Fairship',
+                      date: 'Updated 1 Apr'),
                 ),
                 const SizedBox(height: 30),
                 Text(
@@ -115,7 +115,7 @@ class HomePage extends StatelessWidget {
                       rating: 4,
                       price: 100,
                       duration: 3,
-                      address: '123 Main Street'),
+                      address: 'Jakarta, Indonesia'),
                 ),
                 const SizedBox(height: 30),
                 SpaceCard(
@@ -126,7 +126,7 @@ class HomePage extends StatelessWidget {
                       rating: 4,
                       price: 100,
                       duration: 3,
-                      address: '123 Main Street'),
+                      address: 'Jakarta, Indonesia'),
                 ),
                 const SizedBox(height: 30),
                 SpaceCard(

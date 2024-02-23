@@ -1,4 +1,5 @@
 import 'package:cozy_marketplace/models/index.dart';
+import 'package:cozy_marketplace/theme.dart';
 import 'package:flutter/material.dart';
 
 class TipsAndGuide extends StatelessWidget {
@@ -22,8 +23,8 @@ class TipsAndGuide extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(tips.title),
-                Text(tips.date),
+                Text(tips.title, style: heading1.copyWith(fontSize: 18)),
+                Text(tips.date, style: heading2.copyWith(fontSize: 14)),
               ],
             ),
           ],

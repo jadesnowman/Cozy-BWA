@@ -57,9 +57,20 @@ class SpaceCard extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(space.name),
-            Text(space.imageUrl),
-            Text(space.isPopular.toString())
+            Text(space.name, style: heading1.copyWith(fontSize: 18)),
+            RichText(
+                text: TextSpan(
+              text: '\$${space.price}',
+              style: heading1.copyWith(fontSize: 16, color: purpleColor),
+              children: [
+                TextSpan(
+                  text: ' / month',
+                  style: heading2.copyWith(fontSize: 16),
+                ),
+              ],
+            )),
+            SizedBox(height: 16),
+            Text(space.address, style: heading2.copyWith(fontSize: 14)),
           ],
         )
       ],
