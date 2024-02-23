@@ -38,19 +38,16 @@ class DetailPage extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Container(
-                              height: 40,
-                              width: 40,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(100),
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                shape: CircleBorder(),
+                                padding: EdgeInsets.all(20),
                               ),
-                              child: Center(
-                                child: Image.asset(
-                                  'assets/images/navigations/Icon_left_outline.png',
-                                  width: 20,
-                                  height: 20,
-                                ),
+                              onPressed: () => Navigator.pop(context),
+                              child: Image.asset(
+                                'assets/images/navigations/Icon_left_outline.png',
+                                width: 20,
+                                height: 20,
                               ),
                             ),
                             Container(
@@ -88,13 +85,16 @@ class DetailPage extends StatelessWidget {
                   ),
                 ],
               ),
-              Padding(
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Kuretakeso Hott',
+                      'Kuretakeso Hotel',
                       style: heading1.copyWith(fontSize: 22),
                     ),
                     RichText(
